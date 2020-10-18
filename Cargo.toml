@@ -8,5 +8,6 @@ repository = "https://github.com/dinglebit/terminal.rs"
 homepage = "https://www.dinglebit.com/"
 readme = "README.md"
 categories = ["command-line-interface"]
+license = "MIT"
 
 [dependencies]
