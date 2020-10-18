@@ -9,5 +9,6 @@ homepage = "https://www.dinglebit.com/"
 readme = "README.md"
 categories = ["command-line-interface"]
 license = "MIT"
+documentation = "https://docs.rs/dinglebit-terminal"
 
 [dependencies]
