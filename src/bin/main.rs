@@ -1,4 +1,4 @@
-use terminal::style;
+use dinglebit_terminal::style;
 
 macro_rules! style_test {
     ( $( $name:ident: $sn:expr ),* ) => {

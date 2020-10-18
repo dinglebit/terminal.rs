@@ -9,8 +9,8 @@
 //!
 //! ```
 //! # #[macro_use]
-//! # use terminal::escape_sequence::EscapeSequence;
-//! # use terminal::consts::*;
+//! # use dinglebit_terminal::escape_sequence::EscapeSequence;
+//! # use dinglebit_terminal::consts::*;
 //! # fn main() {
 //!     let s = EscapeSequence::SetGraphicsMode(vec![OP_BOLD, FG_BLACK, BG_WHITE]).to_string();
 //!     assert_eq!(s, "\x1b[1;30;47m");
@@ -28,8 +28,8 @@ pub enum EscapeSequence {
     ///
     /// ```
     /// # #[macro_use]
-    /// # use terminal::escape_sequence::EscapeSequence;
-    /// # use terminal::consts::*;
+    /// # use dinglebit_terminal::escape_sequence::EscapeSequence;
+    /// # use dinglebit_terminal::consts::*;
     /// # fn main() {
     ///     let s = EscapeSequence::SetGraphicsMode(vec![OP_BOLD, FG_BLACK, BG_WHITE]).to_string();
     ///     assert_eq!(s, "\x1b[1;30;47m");
@@ -64,7 +64,7 @@ impl fmt::Display for EscapeSequence {
 ///
 /// ```
 /// # #[macro_use]
-/// # use terminal::reset;
+/// # use dinglebit_terminal::reset;
 /// # fn main() {
 ///     let s = reset!().to_string();
 ///     assert_eq!(s, "\x1b[0m");
@@ -83,8 +83,8 @@ macro_rules! reset {
 ///
 /// ```
 /// # #[macro_use]
-/// # use terminal::sgm;
-/// # use terminal::consts::*;
+/// # use dinglebit_terminal::sgm;
+/// # use dinglebit_terminal::consts::*;
 /// # fn main() {
 ///     let s = sgm!(vec![OP_BOLD, FG_BLACK, BG_WHITE]).to_string();
 ///     assert_eq!(s, "\x1b[1;30;47m");

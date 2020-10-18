@@ -4,7 +4,7 @@
 //! output to the terminal.
 //!
 //! ```
-//! use terminal::style;
+//! use dinglebit_terminal::style;
 //! fn main() {
 //!     let s = style!("{}, {}!", "Hello", "world")
 //!                 .black()
