@@ -5,7 +5,7 @@
 //!
 //! ```
 //! # #[macro_use]
-//! use terminal::style;
+//! use dinglebit_terminal::style;
 //! fn main() {
 //!     let s = style!("{}, {}!", "Hello", "world")
 //!                 .black()
@@ -25,7 +25,7 @@ use std::fmt;
 ///
 /// ```
 /// # #[macro_use]
-/// # use terminal::style;
+/// # use dinglebit_terminal::style;
 /// # fn main() {
 ///     let s = style!("{}, {}!", "Hello", "world")
 ///                 .black()
@@ -45,7 +45,7 @@ macro_rules! style {
 ///
 /// ```
 /// # #[macro_use]
-/// # use terminal::style::Style;
+/// # use dinglebit_terminal::style::Style;
 /// # fn main() {
 ///     let s = Style::new(format!("{}, {}!", "Hello", "world"))
 ///                 .black()
